@@ -1,117 +1,193 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Mark A Mathews Portfolio</title>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" href = "./portfolio.css"/>
-  </head>
-  <!-- Begin website content-->
-  <body>
-  <header>
-      <img class="logopic" src="./IMAGES/SMALL Face.jpg">
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Murecho&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-      <h2>Mark A Mathews</h2>
-      <nav>
-        <!--Navigation Menu-->
-        <!--Create links to different sections of the website-->
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-        </ul>
-      </nav>
-      <!--Create a "Contact" button-->
-      <a class="cta" href="mailto:markadammathews@gmail.com"
-        ><button>Contact</button></a>
-  </header>
+header {
+  
+  display: flex;
+  align-items: center;
+  padding-top: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+  background-color: white;
+}
 
-  <main>
-      <h1 id="home">Mark A Mathews</h1>
-      <h3>Software Engineer</h3>
-      <h4>Cleveland, Ohio</h4>
+li,
+a button {
+  font-family: "oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(8, 8, 8);
+}
 
-      <div>
-        <img class="mainpic" src="./IMAGES/MarkSuit.png" alt="me in a blue suit">
-        <style>
-            div 
-            {
-                text-align: center;
-            }
-        </style>
-      </div>
-      <section class="intro">
-        <p>
-          This is the portfolio website I designed as my first project for the
-          Thinkful Bootcamp. It's been super challenging but worth every minute.
-          Hopefully, I'll expand on it as I apply what I am learning.
-        </p>
-      </section>
-</main>
-  <section class="about"> 
-      <!--Create an "about" section-->
-      <h5 id="about" class="headings">About Me</h5><br>
-        <p>
-          Here's to the beginning of my career as a software developer. From city
-          worker to men's accessories designer to full stack software developer,
-          this is definitely a journey. It's exciting to know that in just a few
-          short months I will have the knowledge I need to begin to develop
-          websites and solve problems. I love working in teams for a common goal
-          and I look forward to working with a company I can grow with. Feel free
-          to contact me while I'm on this journey!
-        </p><br>
+.logopic {
+  margin-right: auto;
+  margin-left: 50px;
+  width: 50px;
+}
 
-      <h5 class="headings">My Hobbies Include</h5><br>
-      <div>
-      <ul class="list">
-        <li>Listening to music</li>
-        <li>Cycling</li>
-        <li>Bowling</li>
-        <li>Motorcycles</li>
-      </ul>
-   
-      </div>
-      <br><div>
-        <img class="logo2" src="./IMAGES/SMALL Face.jpg" alt="logo">
-      </div>
-  </section>
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+  margin-right: 10px;
+}
 
-  <footer>
-      <div>
-        <h4 id="projects" class="foot-text">Thanks For Checking Me Out</h4>
-      </div>
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+  color: black;
+  text-decoration: none;
+}
 
-      <br>
+.nav-links li a:hover {
+  transition: all 0.3s ease 0s;
+  color: rgb(243, 148, 6);
+  text-decoration: underline;
+}
 
-      <section class="nav-links2">
-        <div>
-            <nav>
-                <!--Navigation Menu-->
-                <!--Create links to different sections of the website-->
-                <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="mailto:markadammathews@gmail.com">Contact</a></li>
-                </ul>
-            </nav>
-            <style>
-                div 
-                {
-                    text-align: center;
-                }
-            </style>
-        </div>
-      <div><br>
-        <p>© Copyright 2021</p>
-        <p>Designed by Mark A Mathews</p>
-      
-      </div>
-    </footer>
-  </body>
-</html>
+button {
+  margin-right: 50px;
+  margin-left: 10px 10%;
+  padding: 9px 25px;
+  background-color: rgb(243, 148, 6);
+  border: none;
+  border-radius: 50px;
+
+  transition: all 0.3s ease 0s;
+}
+
+h2 {
+  font-family: "oswald", sans-serif;
+  margin-right: 750px;
+  margin-left: 0px;
+  color: black;
+}
+
+main {
+  background-color: #4faacd;
+  margin-top: 0px;
+
+}
+
+h1 {
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: -5px;
+  font-family: "murecho", sans-serif;
+}
+h3 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-family: "murecho", sans-serif;
+}
+
+h4 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0px;
+  font-family: "murecho", sans-serif;
+}
+
+.mainpic {
+  width: 250px;
+  text-align: center;
+}
+
+.intro {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 200px;
+  margin-top: 0px;
+  font-family: "murecho", sans-serif;
+  height: 100px;
+}
+
+
+
+.about {
+  color: rgb(3, 3, 46);
+  font-size: 20px;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 0px;
+  font-family: "murecho", sans-serif;
+  background-color: white;
+}
+
+.headings {
+  font-family: "murecho", sans-serif;
+  color: rgb(3, 3, 46);
+  font-size: 40px;
+  margin-top: 0px;
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  background-color: white;
+}
+
+.list {
+font-family: "murecho", sans-serif;
+  color: rgb(3, 3, 46);
+  font-size: 40px;
+  margin-top: 0px;
+  text-align: center;
+  list-style: inside;
+  background-color: white; 
+}
+
+.logo2 {
+  width: 200px;
+  margin-top: 10px;
+}
+
+.bottom-buttons {
+  font-family: "murecho", sans-serif;
+  color: rgb(3, 3, 46);
+  font-size: 20px;
+  
+  border-radius: 10px;
+  margin-top: 0px;
+  
+  text-align: center;
+}
+
+footer {
+  font-family: "murech0", sans-serif;
+  font-size: 20px;
+  color: white;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 30px;
+  height: 200px;
+  background-color: rgb(2, 2, 29);
+}
+
+.nav-links2 li {
+    display:inline-flex;
+    padding: 0px 20px;
+    margin-right: 0px;
+    text-align: center;
+  }
+  
+  .nav-links2 li a {
+    transition: all 0.3s ease 0s;
+    color: #4faacd;
+    text-decoration: none;
+  }
+  
+  .nav-links2 li a:hover {
+    transition: all 0.3s ease 0s;
+    color: rgb(243, 148, 6);
+    text-decoration: underline;
+  }
+
