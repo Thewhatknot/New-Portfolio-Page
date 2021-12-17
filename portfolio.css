@@ -7,21 +7,12 @@
 }
 
 header {
-  
   display: flex;
   align-items: center;
   padding-top: 0px;
   margin-top: 10px;
   margin-bottom: 10px; 
   background-color: white;
-}
-/* Style Button and Nav lists*/
-li,
-a button {
-  font-family: "oswald", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: rgb(8, 8, 8);
 }
 
 .logopic {
@@ -30,7 +21,9 @@ a button {
   width: 50px;
 }
 
+/* Style Nav lists*/
 .nav-links li {
+  font-family: "oswald", sans-serif;
   display: inline-block;
   padding: 0px 20px;
   margin-right: 10px;
@@ -47,17 +40,6 @@ a button {
   transition: all 0.3s ease 0s;
   color: rgb(243, 148, 6);
   text-decoration: underline;
-}
-
-button {
-  margin-right: 50px;
-  margin-left: 10px 10%;
-  padding: 9px 25px;
-  background-color: rgb(243, 148, 6);
-  border: none;
-  border-radius: 50px;
-
-  transition: all 0.3s ease 0s;
 }
 
 h2 {
