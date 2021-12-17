@@ -7,6 +7,7 @@
 }
 
 header {
+  
   display: flex;
   align-items: center;
   padding-top: 0px;
@@ -27,7 +28,6 @@ header {
   display: inline-block;
   padding: 0px 20px;
   margin-right: 10px;
- 
 }
 
 .nav-links li a {
@@ -42,9 +42,10 @@ header {
   text-decoration: underline;
 }
 
-h2 {
+h6 {
   font-family: "oswald", sans-serif;
-  margin-right: 750px;
+  font-size: 25px;
+  margin-right: 800px;
   margin-left: 0px;
   color: black;
 }
@@ -64,7 +65,7 @@ h1 {
   margin-bottom: -5px;
   font-family: "murecho", sans-serif;
 }
-h3 {
+h2 {
   color: white;
   font-size: 40px;
   text-align: center;
@@ -163,4 +164,3 @@ footer {
     color: rgb(243, 148, 6);
     text-decoration: underline;
   }
-
