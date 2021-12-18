@@ -166,5 +166,5 @@ footer {
     color: rgb(243, 148, 6);
     text-decoration: underline;
   }
-    @media only screen and max-width:700px;
+    @media only screen and (max-width:700px);
 
